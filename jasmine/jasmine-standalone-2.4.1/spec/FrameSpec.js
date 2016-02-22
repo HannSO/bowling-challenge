@@ -35,8 +35,8 @@ describe("Frame", function() {
 
   describe ('#frameStatus', function(){
     it ('returns strike when the first roll is equal to max pins', function(){
-      frame.addFirstRoll(frame.MAXPINS)
-      expect(frame.status).toEqual('strike')
+      frame.addFirstRoll(frame.MAXPINS);
+      expect(frame.status).toEqual('strike');
     })
     it ('returns spare when both rolls add to ten', function(){
       frame.addFirstRoll(frame.MAXPINS/2)
@@ -45,6 +45,15 @@ describe("Frame", function() {
     })
   })
 
-  })
+
+
+  describe ('#addBonusPins', function(){
+    it ('returns', function(){
+     frame.addBonusPins(1)
+     expect(frame.pinsKnocked).toEqual([0,0,1])
+   });
+   });
+});
+
 
 });

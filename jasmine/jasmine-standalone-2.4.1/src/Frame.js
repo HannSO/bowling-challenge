@@ -26,4 +26,9 @@ Frame.prototype.changeStatus = function(){
   } else {
     this.status = 'normal';
   }
+
+}
+
+Frame.prototype.addBonusPins = function(pins){
+  this.pinsKnocked.push(pins)
 }
