@@ -45,6 +45,10 @@ describe("Frame", function() {
     })
   })
 
+  describe ('#updateNextTurnStatus', function(){
+
+  });
+
 
 
   describe ('#addBonusPins', function(){
